@@ -199,7 +199,7 @@ class Queue_Manager:
     def issue_token(self, token_type):
         try:
             global token_generator, super_queue
-            new_token = get_new_token(token_type)
+            new_token = token_generator.get_new_token(token_type)
             super_queue.put_in_queue(new_token)
         except Exception as e:
             show_exception_info(e)
@@ -229,3 +229,18 @@ class Queue_Manager:
             return super_queue
         except Exception as e:
             show_exception_info(e)
+
+    def show_queue_status(self):
+        try:
+            global super_queue
+            super_queue_dict = super_queue.get_super_queue_dict()
+            msg = "Queues status:"
+            print('\n' + msg + '\n' + '-'*len(msg))
+            for queue_type, queue in super_queue_dict.items():
+                print(queue_type + ":")
+                print(queue)
+                print()
+
+        except Exception as e:
+            show_exception_info(e)
+

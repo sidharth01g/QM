@@ -1,5 +1,7 @@
 from entities import *
-
+"""Insert functions for customer_entry and customer_service and make them
+threads
+"""
 
 def test():
     global token_generator, super_queue, counters_list, queue_manager
@@ -15,6 +17,10 @@ def test():
 
     token_types_list = ['Phone Bills', 'Electricity Bills']
     queue_manager.initialize_super_queue(token_types_list)
+    queue_manager.issue_token('Phone Bills')
+    queue_manager.issue_token('Phone Bills')
+    queue_manager.issue_token('Electricity Bills')
+    queue_manager.show_queue_status()
 
 
 if __name__ == '__main__':
