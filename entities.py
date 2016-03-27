@@ -40,6 +40,7 @@ class Counter:
         try:
             self.set_number(number)
             self.set_types(types)
+            self.set_busy(False)
         except Exception as e:
             show_exception_info(e)
 
@@ -50,7 +51,7 @@ class Counter:
         self.types = types
 
     def set_current_token(self, current_token):
-        self.busy = True
+        # self.set_busy(True)
         self.current_token = current_token
 
     def set_busy(self, busy):
@@ -70,7 +71,16 @@ class Counter:
 
     def release_token(self):
         self.current_token = None
-        self.busy = False
+        # self.set_busy(False)
+
+    def simulate_serve_token(self, current_token, service_time):
+        try:
+            self.set_current_token(current_token)
+            time.sleep(service_time)
+            self.release_token()
+        except Exception as e:
+            show_exception_info(e)
+
 
 
 class Token_Generator:
@@ -179,20 +189,28 @@ class Queue_Manager:
         except Exception as e:
             show_exception_info(e)
 
-    def send_token_to_counter():
+    def send_token_to_counter_and_service(self):
         global counters_list, super_queue
         try:
-            while (True):
-                for counter in counters_list:
-                    if counter.is_busy() is False:
-                        super_queue_dict = super_queue.get_super_queue_dict()
-                        for queue_type, queue in super_queue_dict.items():
-                            if (queue_type in counter.get_types() and
-                                    len(queue) > 0):
-                                popped_token = super_queue.remove_from_queue(
-                                    remove_from_queue)
-                                counter.set_current_token(popped_token)
-
+            for counter in counters_list:
+                print(counter.get_types())
+                print(counter.is_busy())
+                super_queue_dict = super_queue.get_super_queue_dict()
+                for queue_type, queue in super_queue_dict.items():
+                    # print('*'*5,queue_type, queue)
+                    if (queue_type in counter.get_types() and
+                            len(queue) > 0):
+                        if counter.is_busy() is False:
+                            counter.set_busy(True)
+                        self.show_queue_status()
+                        popped_token = super_queue.remove_from_queue(
+                            queue_type)
+                        # counter.set_current_token(popped_token)
+                        print('\n\nPopped token no: ' + str(popped_token.get_number()) + '-' + popped_token.get_type() + str(popped_token) + '. Sending it to counter.' + str(counter.get_number()) + ': ' + str(counter.get_types()))
+                        self.show_queue_status()
+                        service_time = 5 
+                        counter.simulate_serve_token(popped_token, service_time)
+                        counter.set_busy(False)
         except Exception as e:
             show_exception_info(e)
 
@@ -217,7 +235,7 @@ class Queue_Manager:
             global counters_list
             counters_list = []
             for counter_number, supported_tokens_list in counters_dict.items():
-                counters_list.append(Counter(counter_number, counter_number))
+                counters_list.append(Counter(counter_number, supported_tokens_list))
             return counters_list
         except Exception as e:
             show_exception_info(e)
@@ -237,10 +255,18 @@ class Queue_Manager:
             msg = "Queues status:"
             print('\n' + msg + '\n' + '-'*len(msg))
             for queue_type, queue in super_queue_dict.items():
-                print(queue_type + ":")
-                print(queue)
-                print()
+                print(queue_type + ":" + str(queue))
 
+        except Exception as e:
+            show_exception_info(e)
+
+    def all_counters_busy(self):
+        try:
+            global counters_list
+            for counter in counters_list:
+                if counter.is_busy() is False:
+                    return False
+            return True
         except Exception as e:
             show_exception_info(e)
 
