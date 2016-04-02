@@ -6,9 +6,9 @@ def accept_customer():
     try:
         global token_generator, super_queue, counters_list, queue_manager
         while(True):
-            time.sleep(0.5)
+            time.sleep(22)
             queue_manager.issue_token('Electricity Bills')
-            # queue_manager.show_queue_status()
+            queue_manager.show_queue_status()
     except Exception as e:
         show_exception_info(e)
 
@@ -54,14 +54,14 @@ def test():
         queue_manager.show_queue_status()
 
         thread_accept_customer = Thread(target=accept_customer)
-        #thread_accept_customer.start()
+        thread_accept_customer.start()
 
         thread_service_customer = Thread(target=service_queue)
         thread_service_customer.start()
         counter_threads_list = []
-        while(queue_manager.all_counters_busy() is False):
+        for i in range(0, len(counters_list)):
             counter_threads_list.append(Thread(target=queue_manager.send_token_to_counter_and_service))
-            counter_threads_list[-1].start()
+            counter_threads_list[i].start()
 
     except Exception as e:
         show_exception_info(e)
