@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from entities import *
 """Insert functions for customer_entry and customer_service and make them
 threads

@@ -112,7 +112,7 @@ class Token_Generator:
         try:
             global token_generator
             self.busy = True
-            if token_types_list:
+            if token_types_list is not None:
                 self.token_types_list = token_types_list
             else:
                 self.token_types_list = ['Default']
@@ -198,16 +198,16 @@ class Super_Queue:
             token_type = token.get_type()
             while self.queue_busy_dict[token_type] is True:
                 time.sleep(0.1)
-                print('Waiting for queue to be free')
-            self.queue_busy_dict[token_type] = True
+                print('Waiting for queue (' + token_type + ') to be free..')
             if token_type in self.get_token_types_list():
+                self.queue_busy_dict[token_type] = True
                 self.super_queue_dict[token_type].appendleft(token)
+                self.queue_busy_dict[token_type] = False
             else:
                 print(
                     'Token type ' +
                     token_type +
                     ' not allowed in any of the queues')
-            self.queue_busy_dict[token_type] = False
         except Exception as e:
             show_exception_info(e)
 
@@ -254,6 +254,7 @@ class Queue_Manager:
                             popped_token = super_queue.remove_from_queue(
                                 queue_type)
                             if popped_token is None:
+                                # Potentially terminate program?? Verify
                                 return
                             print('\n\nPopped token no: ' + str(popped_token.get_number()) + '-' + popped_token.get_type() + str(popped_token) + '. Sending it to counter.' + str(counter.get_number()) + ': ' + str(counter.get_types()))
                             self.show_queue_status()
