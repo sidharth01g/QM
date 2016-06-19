@@ -2,6 +2,7 @@ from imports import *
 
 token_generator = None
 super_queue = None
+counters_list = None
 
 
 class Token:
@@ -71,6 +72,7 @@ class Counter:
     def set_current_token(self, current_token):
         self.busy = True
         self.current_token = current_token
+        self.update_display()
 
     def set_busy(self, busy):
         self.busy = busy
@@ -98,6 +100,17 @@ class Counter:
             self.release_token()
         except Exception as e:
             show_exception_info(e)
+
+    def update_display(self):
+        # Interfacing commands to be added
+        print('Counter status:')
+        try:
+            print(
+                self.number, self.current_token.get_number(),
+                self.current_token.get_type())
+        except Exception as e:
+            print('No current token: ' + str(e))
+        print('\n')
 
 
 class Token_Generator:
@@ -152,6 +165,7 @@ class Token_Generator:
             self.token_counts_dict[
                 token_type] = self.token_counts_dict[token_type] + 1
             new_token = Token(number, token_type)
+            self.print_token(new_token)
             self.busy = False
             return new_token
         except Exception as e:
@@ -159,6 +173,10 @@ class Token_Generator:
 
     def is_busy(self):
         return self.busy
+
+    def print_token(self, token):
+        # Add printer interfacing/printing commands
+        print('Printing token..' + str(token.get_number()) + ':' + token.get_type())
 
 
 class Super_Queue:
@@ -254,7 +272,7 @@ class Queue_Manager:
                             popped_token = super_queue.remove_from_queue(
                                 queue_type)
                             if popped_token is None:
-                                # Potentially terminate program?? Verify
+                                # Could terminate program. Verify
                                 return
                             print('\n\nPopped token no: ' + str(popped_token.get_number()) + '-' + popped_token.get_type() + str(popped_token) + '. Sending it to counter.' + str(counter.get_number()) + ': ' + str(counter.get_types()))
                             self.show_queue_status()

@@ -3,6 +3,17 @@ from entities import *
 """Insert functions for customer_entry and customer_service and make them
 threads
 """
+
+
+def show_counters_status(counters_list):
+    for counter in counters_list:
+        print(
+            'Counter: ' + counter.get_number() +
+            'Status: ' + str(counter.is_busy()) +
+            'Token number: ' + str(counter.get_current_token().get_number()) +
+            'Token type: ' + counter.get_current_token().get_type())
+
+
 def accept_customer():
     try:
         global token_generator, super_queue, counters_list, queue_manager
@@ -45,8 +56,10 @@ def test():
         counters_dict = {'A1': ['Phone Bills'],
                          'B1': ['Electricity Bills'],
                          'C1': ['Phone Bills', 'Electricity Bills']}
+        """
         counters_dict = {'A1': ['Phone Bills'],
                          'C1': ['Phone Bills', 'Electricity Bills']}
+        """
         queue_manager.initialize_counters_list(counters_dict)
 
         token_types_list = ['Phone Bills', 'Electricity Bills']
