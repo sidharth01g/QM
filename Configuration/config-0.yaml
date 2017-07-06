@@ -1,0 +1,26 @@
+Token_Types:
+    - Cheques
+    - Demand Drafts
+    - Deposits
+
+Counters:
+    Counter C1:
+        Input_Keys:
+            Process: '1'
+        Token_Types:
+            - Cheques
+            - Demand Drafts
+    Counter C2:
+        Input_Keys:
+            Process: '2'
+        Token_Types:
+        - Deposits
+
+Token_Generators:
+    Generator 1:
+        Token_Types:
+            Demand Drafts: d
+    Generator 2:
+        Token_Types:
+            Cheques: c
+            Deposits: p

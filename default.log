@@ -1,0 +1,92 @@
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Type A': 'a'}}, 'Generator 2': {'Token_Types': {'Type B': 'x', 'Type A': 'z'}}}, 'Token_Types': ['Type A', 'Type B', 'Type C'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': 'l'}, 'Token_Types': ['Type A', 'Type B']}, 'Counter C1': {'Input_Keys': {'Process': 'k'}, 'Token_Types': ['Type A']}}}
+DEBUG:QM Logger:Super_Queue insance:
+<super_queue.Super_Queue instance at 0x7f258f3f1758>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': 'l'}, 'Token_Types': ['Type A', 'Type B']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': 'k'}, 'Token_Types': ['Type A']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f258f3f17a0>, {'Process': 'l'}), (<counter.Counter instance at 0x7f258f3f1710>, {'Process': 'k'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Type A': 'a'}}, 'Generator 2': {'Token_Types': {'Type B': 'x', 'Type A': 'z'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f258f3f17a0>, {'Process': 'l'}), (<counter.Counter instance at 0x7f258f3f1710>, {'Process': 'k'})]
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Type A': 'a'}}, 'Generator 2': {'Token_Types': {'Type B': 'x', 'Type A': 'z'}}}, 'Token_Types': ['Type A', 'Type B', 'Type C'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': 'l'}, 'Token_Types': ['Type A', 'Type B']}, 'Counter C1': {'Input_Keys': {'Process': 'k'}, 'Token_Types': ['Type A']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f322ae6b758>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': 'l'}, 'Token_Types': ['Type A', 'Type B']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': 'k'}, 'Token_Types': ['Type A']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f322ae6b7a0>, {'Process': 'l'}), (<counter.Counter instance at 0x7f322ae6b710>, {'Process': 'k'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Type A': 'a'}}, 'Generator 2': {'Token_Types': {'Type B': 'x', 'Type A': 'z'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f322ae6b7a0>, {'Process': 'l'}), (<counter.Counter instance at 0x7f322ae6b710>, {'Process': 'k'})]
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Type A': 'a'}}, 'Generator 2': {'Token_Types': {'Type B': 'x', 'Type A': 'z'}}}, 'Token_Types': ['Type A', 'Type B', 'Type C'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': 'l'}, 'Token_Types': ['Type A', 'Type B']}, 'Counter C1': {'Input_Keys': {'Process': 'k'}, 'Token_Types': ['Type A']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7fee63974830>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': 'l'}, 'Token_Types': ['Type A', 'Type B']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': 'k'}, 'Token_Types': ['Type A']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7fee63974878>, {'Process': 'l'}), (<counter.Counter instance at 0x7fee639747e8>, {'Process': 'k'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Type A': 'a'}}, 'Generator 2': {'Token_Types': {'Type B': 'x', 'Type A': 'z'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7fee63974878>, {'Process': 'l'}), (<counter.Counter instance at 0x7fee639747e8>, {'Process': 'k'})]
+INFO:QM Logger:Starting main loop
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Type A': 'a'}}, 'Generator 2': {'Token_Types': {'Type B': 'x', 'Type A': 'z'}}}, 'Token_Types': ['Type A', 'Type B', 'Type C'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': 'l'}, 'Token_Types': ['Type A', 'Type B']}, 'Counter C1': {'Input_Keys': {'Process': 'k'}, 'Token_Types': ['Type A']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f3e73b4f830>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': 'l'}, 'Token_Types': ['Type A', 'Type B']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': 'k'}, 'Token_Types': ['Type A']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f3e73b4f878>, {'Process': 'l'}), (<counter.Counter instance at 0x7f3e73b4f7e8>, {'Process': 'k'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Type A': 'a'}}, 'Generator 2': {'Token_Types': {'Type B': 'x', 'Type A': 'z'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f3e73b4f878>, {'Process': 'l'}), (<counter.Counter instance at 0x7f3e73b4f7e8>, {'Process': 'k'})]
+INFO:QM Logger:Starting main loop
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Type A': 'a'}}, 'Generator 2': {'Token_Types': {'Type B': 'x', 'Type A': 'z'}}}, 'Token_Types': ['Type A', 'Type B', 'Type C'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': 'l'}, 'Token_Types': ['Type A', 'Type B']}, 'Counter C1': {'Input_Keys': {'Process': 'k'}, 'Token_Types': ['Type A']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7fa3890707e8>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': 'l'}, 'Token_Types': ['Type A', 'Type B']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': 'k'}, 'Token_Types': ['Type A']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7fa389070830>, {'Process': 'l'}), (<counter.Counter instance at 0x7fa3890707a0>, {'Process': 'k'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Type A': 'a'}}, 'Generator 2': {'Token_Types': {'Type B': 'x', 'Type A': 'z'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7fa389070830>, {'Process': 'l'}), (<counter.Counter instance at 0x7fa3890707a0>, {'Process': 'k'})]
+INFO:QM Logger:Starting main loop
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7fa1b43cc7a0>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7fa1b43cc7e8>, {'Process': '2'}), (<counter.Counter instance at 0x7fa1b43cc830>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7fa1b43cc7e8>, {'Process': '2'}), (<counter.Counter instance at 0x7fa1b43cc830>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop

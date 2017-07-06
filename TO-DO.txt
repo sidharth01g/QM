@@ -1,0 +1,7 @@
+1. Permissible token types must be defined in a settings file (preferably yaml).
+    a. Validation: class Token: __init__(..): Validate token_type against permissible types
+    b. Validation: class Super_Queue: __init__(..): token_types_list can be read directly from permissible types instead of as an argument
+2. counter.py - function: scan_and_get_token_from_super_queue(sq)
+    a. Read polling time from settings file
+3. Keys to activate token generator and perform counter operations: save in config file
+4. Config_Manager: validate config file

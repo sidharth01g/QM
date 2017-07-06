@@ -1,0 +1,1891 @@
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7fcda07b9878>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7fcda07b9950>, {'Process': '2'}), (<counter.Counter instance at 0x7fcda07b9998>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7fcda07b9950>, {'Process': '2'}), (<counter.Counter instance at 0x7fcda07b9998>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f8cff04a830>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f8cff04a908>, {'Process': '2'}), (<counter.Counter instance at 0x7f8cff04a950>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f8cff04a908>, {'Process': '2'}), (<counter.Counter instance at 0x7f8cff04a950>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 0
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140243545708288)>]
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140243545708288)>, <Accept_Customer_Thread(Thread-2, started 140243537315584)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140243545708288)>, <Accept_Customer_Thread(Thread-2, started 140243537315584)>, <Accept_Customer_Thread(Thread-3, started 140243528922880)>]
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f8cff04aa28>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f8cff04aa28> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f8cff04aa28>])
+INFO:QM Logger:Printing token: Cheques - 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f8cff04ad40>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f8cff04ad40> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f8cff04ad40>])
+INFO:QM Logger:Printing token: Deposits - 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f8cff04ad88>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f8cff04ad88> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f8cff04ad88>])
+DEBUG:QM Logger:Pressed key: q
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f3d16013878>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f3d16013950>, {'Process': '2'}), (<counter.Counter instance at 0x7f3d16013998>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f3d16013950>, {'Process': '2'}), (<counter.Counter instance at 0x7f3d16013998>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 0
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139900333975296)>]
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139900333975296)>, <Accept_Customer_Thread(Thread-2, started 139900325582592)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139900333975296)>, <Accept_Customer_Thread(Thread-2, started 139900325582592)>, <Accept_Customer_Thread(Thread-3, started 139900317189888)>]
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f3d16013ab8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f3d16013ab8> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f3d16013ab8>])
+INFO:QM Logger:Printing token: Cheques - 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f3d16013d88>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f3d16013d88> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f3d16013d88>])
+INFO:QM Logger:Printing token: Deposits - 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f3d16013dd0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f3d16013dd0> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f3d16013dd0>])
+DEBUG:QM Logger:Pressed key: q
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f871384c878>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f871384c950>, {'Process': '2'}), (<counter.Counter instance at 0x7f871384c998>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f871384c950>, {'Process': '2'}), (<counter.Counter instance at 0x7f871384c998>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 0
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140218119845632)>]
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140218119845632)>, <Accept_Customer_Thread(Thread-2, started 140218111452928)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140218119845632)>, <Accept_Customer_Thread(Thread-2, started 140218111452928)>, <Accept_Customer_Thread(Thread-3, started 140218103060224)>]
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f871384cab8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f871384cab8> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f871384cab8>])
+INFO:QM Logger:Printing token: Cheques - 1
+DEBUG:QM Logger:Pressed key: k
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f871384cd88>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f871384cd88> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f871384cd88>])
+INFO:QM Logger:Printing token: Deposits - 1
+DEBUG:QM Logger:Pressed key: k
+DEBUG:QM Logger:Pressed key: k
+DEBUG:QM Logger:Pressed key: k
+DEBUG:QM Logger:Pressed key: k
+DEBUG:QM Logger:Pressed key: k
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f871384cdd0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f871384cdd0> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f871384cdd0>])
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 3
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, started 140218103060224)>]
+INFO:QM Logger:Printing token: Demand Drafts - 2
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 4
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, started 140218103060224)>, <Accept_Customer_Thread(Thread-5, started 140218111452928)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 5
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, started 140218103060224)>, <Accept_Customer_Thread(Thread-5, started 140218111452928)>, <Accept_Customer_Thread(Thread-6, started 140218119845632)>]
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f871384ce60>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f871384ce60> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f871384ce60>])
+INFO:QM Logger:Printing token: Cheques - 2
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f871384cab8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f871384cab8> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f871384cab8>])
+INFO:QM Logger:Printing token: Deposits - 2
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f871384ce60>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f871384ce60> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f871384ce60>])
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 
+DEBUG:QM Logger:Pressed key: [
+DEBUG:QM Logger:Pressed key: A
+DEBUG:QM Logger:Pressed key: 
+DEBUG:QM Logger:Pressed key: [
+DEBUG:QM Logger:Pressed key: B
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 6
+INFO:QM Logger:Printing token: Demand Drafts - 3
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, started 140218119845632)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 7
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, started 140218119845632)>, <Accept_Customer_Thread(Thread-8, started 140218111452928)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 8
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, started 140218119845632)>, <Accept_Customer_Thread(Thread-8, started 140218111452928)>, <Accept_Customer_Thread(Thread-9, started 140218103060224)>]
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133aa170>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133aa170> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133aa170>])
+INFO:QM Logger:Printing token: Cheques - 3
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133aa4d0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133aa4d0> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133aa4d0>])
+INFO:QM Logger:Printing token: Deposits - 3
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133aa518>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133aa518> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133aa518>, <token.Token instance at 0x7f871384ce60>])
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 9
+INFO:QM Logger:Printing token: Deposits - 4
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-8, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-9, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-10, started 140218103060224)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 10
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-8, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-9, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-10, started 140218103060224)>, <Accept_Customer_Thread(Thread-11, started 140218111452928)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 11
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-8, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-9, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-10, started 140218103060224)>, <Accept_Customer_Thread(Thread-11, started 140218111452928)>, <Accept_Customer_Thread(Thread-12, started 140218119845632)>]
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133aa5a8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133aa5a8> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133aa5a8>, <token.Token instance at 0x7f87133aa518>, <token.Token instance at 0x7f871384ce60>])
+INFO:QM Logger:Printing token: Deposits - 5
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133aa908>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133aa908> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133aa908>, <token.Token instance at 0x7f87133aa5a8>, <token.Token instance at 0x7f87133aa518>, <token.Token instance at 0x7f871384ce60>])
+INFO:QM Logger:Printing token: Deposits - 6
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133aa950>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133aa950> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133aa950>, <token.Token instance at 0x7f87133aa908>, <token.Token instance at 0x7f87133aa5a8>, <token.Token instance at 0x7f87133aa518>, <token.Token instance at 0x7f871384ce60>])
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 12
+INFO:QM Logger:Printing token: Demand Drafts - 4
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-8, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-9, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-10, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-11, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-12, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-13, started 140218119845632)>]
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 13
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-8, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-9, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-10, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-11, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-12, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-13, started 140218119845632)>, <Accept_Customer_Thread(Thread-14, started 140218111452928)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 14
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-8, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-9, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-10, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-11, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-12, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-13, started 140218119845632)>, <Accept_Customer_Thread(Thread-14, started 140218111452928)>, <Accept_Customer_Thread(Thread-15, started 140218103060224)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 15
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-8, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-9, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-10, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-11, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-12, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-13, started 140218119845632)>, <Accept_Customer_Thread(Thread-14, started 140218111452928)>, <Accept_Customer_Thread(Thread-15, started 140218103060224)>, <Accept_Customer_Thread(Thread-16, started 140218094667520)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 16
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-8, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-9, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-10, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-11, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-12, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-13, started 140218119845632)>, <Accept_Customer_Thread(Thread-14, started 140218111452928)>, <Accept_Customer_Thread(Thread-15, started 140218103060224)>, <Accept_Customer_Thread(Thread-16, started 140218094667520)>, <Accept_Customer_Thread(Thread-17, started 140218086274816)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 17
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-2, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-3, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-4, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-5, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-6, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-7, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-8, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-9, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-10, stopped 140218103060224)>, <Accept_Customer_Thread(Thread-11, stopped 140218111452928)>, <Accept_Customer_Thread(Thread-12, stopped 140218119845632)>, <Accept_Customer_Thread(Thread-13, started 140218119845632)>, <Accept_Customer_Thread(Thread-14, started 140218111452928)>, <Accept_Customer_Thread(Thread-15, started 140218103060224)>, <Accept_Customer_Thread(Thread-16, started 140218094667520)>, <Accept_Customer_Thread(Thread-17, started 140218086274816)>, <Accept_Customer_Thread(Thread-18, started 140218077882112)>]
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133aa170>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133aa170> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133aa170>])
+INFO:QM Logger:Printing token: Demand Drafts - 5
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133ad2d8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133ad2d8> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133ad2d8>])
+INFO:QM Logger:Printing token: Cheques - 4
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133aa170>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133aa170> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133aa170>])
+INFO:QM Logger:Printing token: Cheques - 5
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133ad368>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133ad368> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133ad368>, <token.Token instance at 0x7f87133aa170>])
+INFO:QM Logger:Printing token: Deposits - 7
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133ad3b0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133ad3b0> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133ad3b0>])
+INFO:QM Logger:Printing token: Deposits - 8
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f87133aa170>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f87133aa170> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f87133aa170>])
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: q
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7fb2ec9608c0>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7fb2ec960998>, {'Process': '2'}), (<counter.Counter instance at 0x7fb2ec9609e0>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7fb2ec960998>, {'Process': '2'}), (<counter.Counter instance at 0x7fb2ec9609e0>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 0
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140406445225728)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140406445225728)>, <Accept_Customer_Thread(Thread-2, started 140406436833024)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140406445225728)>, <Accept_Customer_Thread(Thread-2, started 140406436833024)>, <Accept_Customer_Thread(Thread-3, started 140406428440320)>]
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fb2ec960ab8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fb2ec960ab8> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fb2ec960ab8>])
+INFO:QM Logger:Printing token: Cheques - 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fb2ec960dd0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fb2ec960dd0> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fb2ec960dd0>])
+INFO:QM Logger:Printing token: Deposits - 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fb2ec960e18>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fb2ec960e18> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fb2ec960e18>])
+DEBUG:QM Logger:Pressed key: 
+DEBUG:QM Logger:Pressed key: [
+DEBUG:QM Logger:Pressed key: A
+DEBUG:QM Logger:Pressed key: q
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f7d1fb02878>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f7d1fb02950>, {'Process': '2'}), (<counter.Counter instance at 0x7f7d1fb02998>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f7d1fb02950>, {'Process': '2'}), (<counter.Counter instance at 0x7f7d1fb02998>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 0
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140175374341888)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140175374341888)>, <Accept_Customer_Thread(Thread-2, started 140175365949184)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140175374341888)>, <Accept_Customer_Thread(Thread-2, started 140175365949184)>, <Accept_Customer_Thread(Thread-3, started 140175357556480)>]
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f7d1fb02a70>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f7d1fb02a70> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f7d1fb02a70>])
+INFO:QM Logger:Printing token: Cheques - 1
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f7d1fb02d88>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f7d1fb02d88> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f7d1fb02d88>])
+INFO:QM Logger:Printing token: Deposits - 1
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f7d1fb02dd0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f7d1fb02dd0> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f7d1fb02dd0>])
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 3
+INFO:QM Logger:Printing token: Cheques - 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140175374341888)>, <Accept_Customer_Thread(Thread-2, stopped 140175365949184)>, <Accept_Customer_Thread(Thread-3, stopped 140175357556480)>, <Accept_Customer_Thread(Thread-4, started 140175357556480)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 4
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140175374341888)>, <Accept_Customer_Thread(Thread-2, stopped 140175365949184)>, <Accept_Customer_Thread(Thread-3, stopped 140175357556480)>, <Accept_Customer_Thread(Thread-4, started 140175357556480)>, <Accept_Customer_Thread(Thread-5, started 140175365949184)>]
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f7d1fb02e60>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f7d1fb02e60> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f7d1fb02e60>, <token.Token instance at 0x7f7d1fb02d88>])
+INFO:QM Logger:Printing token: Cheques - 3
+INFO:QM Logger:Printed token 3
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f7d1f65f098>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f7d1f65f098> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f7d1f65f098>, <token.Token instance at 0x7f7d1fb02e60>, <token.Token instance at 0x7f7d1fb02d88>])
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C2 - 1 - Deposits
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+INFO:QM Logger:Counter status:
+INFO:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Cheques
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+INFO:QM Logger:Counter status:
+INFO:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 2 - Cheques
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+INFO:QM Logger:Counter status:
+INFO:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 3 - Cheques
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+INFO:QM Logger:Counter status:
+INFO:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Demand Drafts
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+INFO:QM Logger:Counter status:
+INFO:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Pressed key: q
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f316f717998>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f316f717a70>, {'Process': '2'}), (<counter.Counter instance at 0x7f316f717ab8>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f316f717a70>, {'Process': '2'}), (<counter.Counter instance at 0x7f316f717ab8>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: b
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 0
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139850294896384)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139850294896384)>, <Accept_Customer_Thread(Thread-2, started 139850286503680)>]
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139850294896384)>, <Accept_Customer_Thread(Thread-2, started 139850286503680)>, <Accept_Customer_Thread(Thread-3, started 139850278110976)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 3
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139850294896384)>, <Accept_Customer_Thread(Thread-2, started 139850286503680)>, <Accept_Customer_Thread(Thread-3, started 139850278110976)>, <Accept_Customer_Thread(Thread-4, started 139850269718272)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 4
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139850294896384)>, <Accept_Customer_Thread(Thread-2, started 139850286503680)>, <Accept_Customer_Thread(Thread-3, started 139850278110976)>, <Accept_Customer_Thread(Thread-4, started 139850269718272)>, <Accept_Customer_Thread(Thread-5, started 139850261325568)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 5
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139850294896384)>, <Accept_Customer_Thread(Thread-2, started 139850286503680)>, <Accept_Customer_Thread(Thread-3, started 139850278110976)>, <Accept_Customer_Thread(Thread-4, started 139850269718272)>, <Accept_Customer_Thread(Thread-5, started 139850261325568)>, <Accept_Customer_Thread(Thread-6, started 139850252932864)>]
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 6
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139850294896384)>, <Accept_Customer_Thread(Thread-2, started 139850286503680)>, <Accept_Customer_Thread(Thread-3, started 139850278110976)>, <Accept_Customer_Thread(Thread-4, started 139850269718272)>, <Accept_Customer_Thread(Thread-5, started 139850261325568)>, <Accept_Customer_Thread(Thread-6, started 139850252932864)>, <Accept_Customer_Thread(Thread-7, started 139849906517760)>]
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f316f717b90>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f316f717b90> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f316f717b90>])
+INFO:QM Logger:Printing token: Cheques - 1
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f316f275488>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f316f275488> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f316f275488>])
+INFO:QM Logger:Printing token: Demand Drafts - 2
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f316f275488>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Cheques
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f316f275518>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f316f275518> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f316f275518>, <token.Token instance at 0x7f316f717b90>])
+INFO:QM Logger:Printing token: Deposits - 1
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f316f275488>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:No token at this counter to display!
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f316f275560>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f316f275560> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f316f275560>])
+INFO:QM Logger:Printing token: Deposits - 2
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f316f275488>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f316f275488> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f316f275488>, <token.Token instance at 0x7f316f275560>])
+INFO:QM Logger:Printing token: Deposits - 3
+INFO:QM Logger:Printed token 3
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f316f2754d0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f316f2754d0> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f316f2754d0>, <token.Token instance at 0x7f316f275488>, <token.Token instance at 0x7f316f275560>])
+INFO:QM Logger:Printing token: Demand Drafts - 3
+INFO:QM Logger:Printed token 3
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f316f2755a8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f316f2755a8> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f316f2755a8>, <token.Token instance at 0x7f316f275518>, <token.Token instance at 0x7f316f717b90>])
+DEBUG:QM Logger:Pressed key: q
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f48de3c38c0>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f48de3c3998>, {'Process': '2'}), (<counter.Counter instance at 0x7f48de3c39e0>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f48de3c3998>, {'Process': '2'}), (<counter.Counter instance at 0x7f48de3c39e0>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 0
+INFO:QM Logger:Printing token: Deposits - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139950937925376)>]
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139950937925376)>, <Accept_Customer_Thread(Thread-2, started 139950929532672)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139950937925376)>, <Accept_Customer_Thread(Thread-2, started 139950929532672)>, <Accept_Customer_Thread(Thread-3, started 139950921139968)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 3
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139950937925376)>, <Accept_Customer_Thread(Thread-2, started 139950929532672)>, <Accept_Customer_Thread(Thread-3, started 139950921139968)>, <Accept_Customer_Thread(Thread-4, started 139950704031488)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 4
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139950937925376)>, <Accept_Customer_Thread(Thread-2, started 139950929532672)>, <Accept_Customer_Thread(Thread-3, started 139950921139968)>, <Accept_Customer_Thread(Thread-4, started 139950704031488)>, <Accept_Customer_Thread(Thread-5, started 139950695638784)>]
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f48de3c3ab8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f48de3c3ab8> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f48de3c3ab8>])
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C2 - Servicing token: <token.Token instance at 0x7f48de3c3ab8>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C2 - 1 - Deposits
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C2 - Releasing token: <token.Token instance at 0x7f48de3c3ab8>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:No token at this counter to display!
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f48ddf200e0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f48ddf200e0> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f48ddf200e0>])
+INFO:QM Logger:Printing token: Cheques - 1
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f48de3c3ab8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f48de3c3ab8> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f48de3c3ab8>])
+INFO:QM Logger:Printing token: Deposits - 2
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f48ddf20128>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f48ddf20128> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f48ddf20128>])
+INFO:QM Logger:Printing token: Deposits - 3
+INFO:QM Logger:Printed token 3
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f48ddf20170>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f48ddf20170> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f48ddf20170>, <token.Token instance at 0x7f48ddf20128>])
+DEBUG:QM Logger:Pressed key: q
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f994c891998>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f994c891a70>, {'Process': '2'}), (<counter.Counter instance at 0x7f994c891ab8>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f994c891a70>, {'Process': '2'}), (<counter.Counter instance at 0x7f994c891ab8>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: b
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 0
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140296385840896)>]
+INFO:QM Logger:Printing token: Cheques - 1
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140296385840896)>, <Accept_Customer_Thread(Thread-2, started 140296377448192)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140296385840896)>, <Accept_Customer_Thread(Thread-2, started 140296377448192)>, <Accept_Customer_Thread(Thread-3, started 140296369055488)>]
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 3
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140296385840896)>, <Accept_Customer_Thread(Thread-2, started 140296377448192)>, <Accept_Customer_Thread(Thread-3, started 140296369055488)>, <Accept_Customer_Thread(Thread-4, started 140296360662784)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 4
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140296385840896)>, <Accept_Customer_Thread(Thread-2, started 140296377448192)>, <Accept_Customer_Thread(Thread-3, started 140296369055488)>, <Accept_Customer_Thread(Thread-4, started 140296360662784)>, <Accept_Customer_Thread(Thread-5, started 140296352270080)>]
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f994c891bd8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f994c891bd8> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f994c891bd8>])
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f994c3f01b8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f994c3f01b8> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f994c3f01b8>])
+INFO:QM Logger:Printing token: Deposits - 1
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f994c3f0248>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f994c3f0248> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f994c3f0248>])
+INFO:QM Logger:Printing token: Demand Drafts - 2
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C2 - Servicing token: <token.Token instance at 0x7f994c3f0248>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C2 - 1 - Deposits
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f994c3f0290>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f994c3f0290> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f994c3f0290>, <token.Token instance at 0x7f994c3f01b8>])
+INFO:QM Logger:Printing token: Deposits - 2
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C2 - Releasing token: <token.Token instance at 0x7f994c3f0248>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f994c3f0200>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f994c3f0200> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f994c3f0200>])
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f994c891bd8>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Cheques
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f994c891bd8>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f994c3f01b8>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Demand Drafts
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f994c3f01b8>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f994c3f0290>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 2 - Demand Drafts
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f994c3f0290>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C2 - Servicing token: <token.Token instance at 0x7f994c3f0200>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C2 - 2 - Deposits
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C2 - Releasing token: <token.Token instance at 0x7f994c3f0200>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: q
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f61dc5d68c0>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f61dc5d6998>, {'Process': '2'}), (<counter.Counter instance at 0x7f61dc5d69e0>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f61dc5d6998>, {'Process': '2'}), (<counter.Counter instance at 0x7f61dc5d69e0>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 0
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140058280728320)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140058280728320)>, <Accept_Customer_Thread(Thread-2, started 140058272335616)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140058280728320)>, <Accept_Customer_Thread(Thread-2, started 140058272335616)>, <Accept_Customer_Thread(Thread-3, started 140058263942912)>]
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f61dc5d6ab8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f61dc5d6ab8> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f61dc5d6ab8>])
+INFO:QM Logger:Printing token: Cheques - 1
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f61dc5d6dd0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f61dc5d6dd0> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f61dc5d6dd0>])
+INFO:QM Logger:Printing token: Deposits - 1
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f61dc5d6e18>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f61dc5d6e18> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f61dc5d6e18>])
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f61dc5d6dd0>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Cheques
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f61dc5d6dd0>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C2 - Servicing token: <token.Token instance at 0x7f61dc5d6e18>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C2 - 1 - Deposits
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f61dc5d6ab8>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Demand Drafts
+DEBUG:QM Logger:Pressed key: 3
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C2 - Releasing token: <token.Token instance at 0x7f61dc5d6e18>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f61dc5d6ab8>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: q
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f13a94009e0>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f13a9400ab8>, {'Process': '2'}), (<counter.Counter instance at 0x7f13a9400b00>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f13a9400ab8>, {'Process': '2'}), (<counter.Counter instance at 0x7f13a9400b00>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 0
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 139722415712000)>]
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f13a9400bd8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f13a9400bd8> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f13a9400bd8>])
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 1
+INFO:QM Logger:Printing token: Demand Drafts - 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 139722415712000)>, <Accept_Customer_Thread(Thread-2, started 139722415712000)>]
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 2
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 139722415712000)>, <Accept_Customer_Thread(Thread-2, started 139722415712000)>, <Accept_Customer_Thread(Thread-3, started 139722332567296)>]
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f13a9400cb0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f13a9400cb0> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f13a9400cb0>, <token.Token instance at 0x7f13a9400bd8>])
+INFO:QM Logger:Printing token: Demand Drafts - 3
+INFO:QM Logger:Printed token 3
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f13a9400ef0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f13a9400ef0> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f13a9400ef0>, <token.Token instance at 0x7f13a9400cb0>, <token.Token instance at 0x7f13a9400bd8>])
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 3
+INFO:QM Logger:Printing token: Demand Drafts - 4
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 139722415712000)>, <Accept_Customer_Thread(Thread-2, stopped 139722415712000)>, <Accept_Customer_Thread(Thread-3, stopped 139722332567296)>, <Accept_Customer_Thread(Thread-4, started 139722332567296)>]
+DEBUG:QM Logger:Pressed key: l
+INFO:QM Logger:Printed token 4
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f13a9400f80>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f13a9400f80> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f13a9400f80>, <token.Token instance at 0x7f13a9400ef0>, <token.Token instance at 0x7f13a9400cb0>, <token.Token instance at 0x7f13a9400bd8>])
+DEBUG:QM Logger:Pressed key: l
+DEBUG:QM Logger:Pressed key: k
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f75c4976a28>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f75c4976b00>, {'Process': '2'}), (<counter.Counter instance at 0x7f75c4976b48>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f75c4976b00>, {'Process': '2'}), (<counter.Counter instance at 0x7f75c4976b48>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 0
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140143781218048)>]
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140143781218048)>, <Accept_Customer_Thread(Thread-2, started 140143772825344)>]
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f75c4976c20>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f75c4976c20> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f75c4976c20>])
+INFO:QM Logger:Printing token: Demand Drafts - 2
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f75c4976dd0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f75c4976dd0> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f75c4976dd0>, <token.Token instance at 0x7f75c4976c20>])
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f75c4976c20>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Demand Drafts
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f75c4976c20>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f75c4976dd0>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 2 - Demand Drafts
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f75c4976dd0>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 2
+INFO:QM Logger:Printing token: Cheques - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140143781218048)>, <Accept_Customer_Thread(Thread-2, stopped 140143772825344)>, <Accept_Customer_Thread(Thread-3, started 140143772825344)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 3
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140143781218048)>, <Accept_Customer_Thread(Thread-2, stopped 140143772825344)>, <Accept_Customer_Thread(Thread-3, started 140143772825344)>, <Accept_Customer_Thread(Thread-4, started 140143781218048)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 4
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140143781218048)>, <Accept_Customer_Thread(Thread-2, stopped 140143772825344)>, <Accept_Customer_Thread(Thread-3, started 140143772825344)>, <Accept_Customer_Thread(Thread-4, started 140143781218048)>, <Accept_Customer_Thread(Thread-5, started 140143764432640)>]
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f75c4976e60>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f75c4976e60> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f75c4976e60>])
+INFO:QM Logger:Printing token: Cheques - 2
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f75c44d51b8>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f75c44d51b8> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f75c44d51b8>, <token.Token instance at 0x7f75c4976e60>])
+INFO:QM Logger:Printing token: Cheques - 3
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 5
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140143781218048)>, <Accept_Customer_Thread(Thread-2, stopped 140143772825344)>, <Accept_Customer_Thread(Thread-3, stopped 140143772825344)>, <Accept_Customer_Thread(Thread-4, stopped 140143781218048)>, <Accept_Customer_Thread(Thread-5, started 140143764432640)>, <Accept_Customer_Thread(Thread-6, started 140143781218048)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 6
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140143781218048)>, <Accept_Customer_Thread(Thread-2, stopped 140143772825344)>, <Accept_Customer_Thread(Thread-3, stopped 140143772825344)>, <Accept_Customer_Thread(Thread-4, stopped 140143781218048)>, <Accept_Customer_Thread(Thread-5, started 140143764432640)>, <Accept_Customer_Thread(Thread-6, started 140143781218048)>, <Accept_Customer_Thread(Thread-7, started 140143772825344)>]
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 7
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140143781218048)>, <Accept_Customer_Thread(Thread-2, stopped 140143772825344)>, <Accept_Customer_Thread(Thread-3, stopped 140143772825344)>, <Accept_Customer_Thread(Thread-4, stopped 140143781218048)>, <Accept_Customer_Thread(Thread-5, started 140143764432640)>, <Accept_Customer_Thread(Thread-6, started 140143781218048)>, <Accept_Customer_Thread(Thread-7, started 140143772825344)>, <Accept_Customer_Thread(Thread-8, started 140143756039936)>]
+INFO:QM Logger:Printed token 3
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f75c44d5200>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f75c44d5200> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f75c44d5200>, <token.Token instance at 0x7f75c44d51b8>, <token.Token instance at 0x7f75c4976e60>])
+INFO:QM Logger:Printing token: Cheques - 4
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f75c4976e60>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Cheques
+INFO:QM Logger:Printed token 4
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f75c44d55f0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f75c44d55f0> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f75c44d55f0>, <token.Token instance at 0x7f75c44d5200>, <token.Token instance at 0x7f75c44d51b8>])
+INFO:QM Logger:Printing token: Cheques - 5
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f75c4976e60>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f75c44d51b8>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 2 - Cheques
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f75c44d51b8>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+INFO:QM Logger:Printed token 5
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f75c44d5638>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f75c44d5638> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f75c44d5638>, <token.Token instance at 0x7f75c44d55f0>, <token.Token instance at 0x7f75c44d5200>])
+INFO:QM Logger:Printing token: Cheques - 6
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7f75c44d5200>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 3 - Cheques
+INFO:QM Logger:Printed token 6
+DEBUG:QM Logger:New token: <token.Token instance at 0x7f75c4976e60>
+INFO:QM Logger:Adding token <token.Token instance at 0x7f75c4976e60> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7f75c4976e60>, <token.Token instance at 0x7f75c44d5638>, <token.Token instance at 0x7f75c44d55f0>])
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7f75c44d5200>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7fe18e303a28>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7fe18e303b00>, {'Process': '2'}), (<counter.Counter instance at 0x7fe18e303b48>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7fe18e303b00>, {'Process': '2'}), (<counter.Counter instance at 0x7fe18e303b48>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 0
+INFO:QM Logger:Printing token: Demand Drafts - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140606724953856)>]
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, started 140606724953856)>, <Accept_Customer_Thread(Thread-2, started 140606716561152)>]
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fe18e303c20>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fe18e303c20> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fe18e303c20>])
+INFO:QM Logger:Printing token: Demand Drafts - 2
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fe18e303dd0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fe18e303dd0> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fe18e303dd0>, <token.Token instance at 0x7fe18e303c20>])
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7fe18e303c20>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Demand Drafts
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7fe18e303c20>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7fe18e303dd0>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 2 - Demand Drafts
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7fe18e303dd0>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: c
+DEBUG:QM Logger:Requested type: Cheques
+DEBUG:QM Logger:Creating thread for token type: Cheques
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 2
+INFO:QM Logger:Printing token: Cheques - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140606724953856)>, <Accept_Customer_Thread(Thread-2, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-3, started 140606716561152)>]
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fe18e303e18>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fe18e303e18> to queue
+DEBUG:QM Logger:Queue- Cheques
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fe18e303e18>])
+DEBUG:QM Logger:Pressed key: d
+DEBUG:QM Logger:Requested type: Demand Drafts
+DEBUG:QM Logger:Creating thread for token type: Demand Drafts
+DEBUG:QM Logger:Supported types: ['Demand Drafts']
+DEBUG:QM Logger:Thread: 3
+INFO:QM Logger:Printing token: Demand Drafts - 3
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140606724953856)>, <Accept_Customer_Thread(Thread-2, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-3, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-4, started 140606716561152)>]
+INFO:QM Logger:Printed token 3
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fe18e303f38>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fe18e303f38> to queue
+DEBUG:QM Logger:Queue- Demand Drafts
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fe18e303f38>])
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 4
+INFO:QM Logger:Printing token: Deposits - 1
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140606724953856)>, <Accept_Customer_Thread(Thread-2, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-3, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-4, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-5, started 140606716561152)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 5
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140606724953856)>, <Accept_Customer_Thread(Thread-2, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-3, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-4, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-5, started 140606716561152)>, <Accept_Customer_Thread(Thread-6, started 140606724953856)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 6
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140606724953856)>, <Accept_Customer_Thread(Thread-2, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-3, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-4, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-5, started 140606716561152)>, <Accept_Customer_Thread(Thread-6, started 140606724953856)>, <Accept_Customer_Thread(Thread-7, started 140606708168448)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 7
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140606724953856)>, <Accept_Customer_Thread(Thread-2, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-3, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-4, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-5, started 140606716561152)>, <Accept_Customer_Thread(Thread-6, started 140606724953856)>, <Accept_Customer_Thread(Thread-7, started 140606708168448)>, <Accept_Customer_Thread(Thread-8, started 140606491850496)>]
+DEBUG:QM Logger:Pressed key: p
+DEBUG:QM Logger:Requested type: Deposits
+DEBUG:QM Logger:Creating thread for token type: Deposits
+DEBUG:QM Logger:Supported types: ['Deposits', 'Cheques']
+DEBUG:QM Logger:Thread: 8
+DEBUG:QM Logger:Threads (issue token) list: [<Accept_Customer_Thread(Thread-1, stopped 140606724953856)>, <Accept_Customer_Thread(Thread-2, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-3, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-4, stopped 140606716561152)>, <Accept_Customer_Thread(Thread-5, started 140606716561152)>, <Accept_Customer_Thread(Thread-6, started 140606724953856)>, <Accept_Customer_Thread(Thread-7, started 140606708168448)>, <Accept_Customer_Thread(Thread-8, started 140606491850496)>, <Accept_Customer_Thread(Thread-9, started 140606483457792)>]
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7fe18e303e18>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 1 - Cheques
+INFO:QM Logger:Printed token 1
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fe18de630e0>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fe18de630e0> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fe18de630e0>])
+INFO:QM Logger:Printing token: Deposits - 2
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7fe18e303e18>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+INFO:QM Logger:Printed token 2
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fe18de63758>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fe18de63758> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fe18de63758>, <token.Token instance at 0x7fe18de630e0>])
+INFO:QM Logger:Printing token: Deposits - 3
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C1 - Servicing token: <token.Token instance at 0x7fe18e303f38>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C1 - 3 - Demand Drafts
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C1 - Releasing token: <token.Token instance at 0x7fe18e303f38>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C2 - Servicing token: <token.Token instance at 0x7fe18de630e0>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C2 - 1 - Deposits
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C2 - Releasing token: <token.Token instance at 0x7fe18de630e0>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+INFO:QM Logger:Printed token 3
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fe18e303e18>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fe18e303e18> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fe18e303e18>, <token.Token instance at 0x7fe18de63758>])
+INFO:QM Logger:Printing token: Deposits - 4
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C2 - Servicing token: <token.Token instance at 0x7fe18de63758>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C2 - 2 - Deposits
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C2 - Releasing token: <token.Token instance at 0x7fe18de63758>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C2 - Servicing token: <token.Token instance at 0x7fe18e303e18>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C2 - 3 - Deposits
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C2 - Releasing token: <token.Token instance at 0x7fe18e303e18>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+INFO:QM Logger:Printed token 4
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fe18e303f38>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fe18e303f38> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fe18e303f38>])
+INFO:QM Logger:Printing token: Deposits - 5
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Fetching token..
+DEBUG:QM Logger:Counter C2 - Servicing token: <token.Token instance at 0x7fe18e303f38>
+INFO:QM Logger:Counter status:
+INFO:QM Logger:Counter C2 - 4 - Deposits
+DEBUG:QM Logger:Pressed key: 1
+INFO:QM Logger:Fetching token..
+WARNING:QM Logger:No tokens in super queue for this counter
+DEBUG:QM Logger:Pressed key: 2
+INFO:QM Logger:Releasing token..
+DEBUG:QM Logger:Counter C2 - Releasing token: <token.Token instance at 0x7fe18e303f38>
+INFO:QM Logger:Counter status:
+WARNING:QM Logger:No token at this counter to display!
+INFO:QM Logger:Printed token 5
+DEBUG:QM Logger:New token: <token.Token instance at 0x7fe18e303e18>
+INFO:QM Logger:Adding token <token.Token instance at 0x7fe18e303e18> to queue
+DEBUG:QM Logger:Queue- Deposits
+DEBUG:QM Logger:deque([<token.Token instance at 0x7fe18e303e18>])
+DEBUG:QM Logger:Pressed key: q
+INFO:QM Logger:Starting objects instatiation
+DEBUG:QM Logger:Configuration Dictionary:
+{'Token_Generators': {'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}, 'Token_Types': ['Cheques', 'Demand Drafts', 'Deposits'], 'Counters': {'Counter C2': {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}, 'Counter C1': {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}}}
+DEBUG:QM Logger:Super_Queue instance:
+<super_queue.Super_Queue instance at 0x7f25cf163a28>
+DEBUG:QM Logger:Counters instance:
+Counter C2: {'Input_Keys': {'Process': '2'}, 'Token_Types': ['Deposits']}
+DEBUG:QM Logger:Counters instance:
+Counter C1: {'Input_Keys': {'Process': '1'}, 'Token_Types': ['Cheques', 'Demand Drafts']}
+DEBUG:QM Logger:Counters list:
+[(<counter.Counter instance at 0x7f25cf163b00>, {'Process': '2'}), (<counter.Counter instance at 0x7f25cf163b48>, {'Process': '1'})]
+DEBUG:QM Logger:Token generators dictionary:
+{'Generator 1': {'Token_Types': {'Demand Drafts': 'd'}}, 'Generator 2': {'Token_Types': {'Deposits': 'p', 'Cheques': 'c'}}}
+DEBUG:QM Logger:Token generators list:
+[(<counter.Counter instance at 0x7f25cf163b00>, {'Process': '2'}), (<counter.Counter instance at 0x7f25cf163b48>, {'Process': '1'})]
+INFO:QM Logger:Starting main loop
+DEBUG:QM Logger:Pressed key: q

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+sudo pip install coloredlogs
+sudo pip install pyyaml
